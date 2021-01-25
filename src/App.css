@@ -12,7 +12,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.breadcrumb {
+  margin-bottom: 0!important;
+  background-color: black!important;
+  border-radius: 0!important;
+  /* background-image: url("./components/images/rob_banner.png"); */
+  line-height: 1em;
+  font-family: 'Oswald', sans-serif;
 
+}
+
+.breadcrumb > .breadcrumb-item{
+  margin-left: 1em!important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
