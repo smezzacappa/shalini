@@ -57,6 +57,9 @@ export default class Links extends Component{
             .navbar-toggler.collapsed{
                 padding: .1em;
             }
+            .dropdown-menu{
+                border: none;
+            }
             `}
           </style>
       </div>
