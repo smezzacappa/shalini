@@ -13,7 +13,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
-import Parfume from './pages/Parfume';
+import Parfum from './pages/Parfum';
 import Clothing from './pages/Clothing';
 
 
@@ -21,7 +21,7 @@ export default class Links extends Component{
     render(){
         return(
             <div>
-<Navbar bg="light" expand="lg">
+<Navbar expand="sm">
   {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -30,10 +30,10 @@ export default class Links extends Component{
       <Nav.Link as={Link} to="/about">About</Nav.Link>
       <NavDropdown title="Products" id="basic-nav-dropdown">
         <NavDropdown.Item as={Link} to="/products">All Products</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="/parfume">Parfume</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/parfum">Parfum</NavDropdown.Item>
         <NavDropdown.Item as={Link} to="/clothing">Clothing</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        {/* <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>
@@ -44,11 +44,21 @@ export default class Links extends Component{
      <Route exact path='/' component={Home}/>
       <Route exact path='/products' component={Products} />   
       <Route  exact path="/about" component = {About}/>  
-      <Route exact path="/parfume" component={Parfume}/>
+      <Route exact path="/parfum" component={Parfum}/>
       <Route  exact path="/clothing" component = {Clothing}/>  
       </Switch>
       
       </div>
+      <style jsx>
+            {`
+            .navbar-light .navbar-toggler{
+                border: none;
+            }
+            .navbar-toggler.collapsed{
+                padding: .1em;
+            }
+            `}
+          </style>
       </div>
         )
     }
