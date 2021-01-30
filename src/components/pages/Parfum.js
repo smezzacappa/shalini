@@ -10,7 +10,7 @@ import S4 from "../../assets/images/shalini4.jpg";
 export default class Parfum extends Component{
     render(){
         return(
-          <div >
+          <div className="container1">
            <Row>
     <Col sm={6}>
     <img src={S2} />

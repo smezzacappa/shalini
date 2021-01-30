@@ -17,11 +17,11 @@ import Banner from './components/Banner';
 
 function App() {
   return (
-    <div>
+    <div >
      <Banner/>
       
     <Links/>
-    <div className="App">
+    <div className="container1">
       {/* <Router>
      <Switch>
      <Route exact path='/' component={Home}/>
