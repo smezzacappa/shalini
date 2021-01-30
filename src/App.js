@@ -22,13 +22,13 @@ function App() {
       
     <Links/>
     <div className="container1">
-      {/* <Router>
+      <Router>
      <Switch>
      <Route exact path='/' component={Home}/>
       <Route exact path='/products' component={Products} />   
       <Route  exact path="/about" component = {About}/>  
       </Switch>
-      </Router> */}
+      </Router>
     </div>
     </div>
   );

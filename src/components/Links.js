@@ -40,13 +40,13 @@ export default class Links extends Component{
 </Navbar>
 <div>
 
-     <Switch>
+     {/* <Switch>
      <Route exact path='/' component={Home}/>
       <Route exact path='/products' component={Products} />   
       <Route  exact path="/about" component = {About}/>  
       <Route exact path="/parfum" component={Parfum}/>
       <Route  exact path="/clothing" component = {Clothing}/>  
-      </Switch>
+      </Switch> */}
       
       </div>
       <style jsx>
